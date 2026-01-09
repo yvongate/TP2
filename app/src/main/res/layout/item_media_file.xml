@@ -17,10 +17,11 @@
 
         <ImageView
             android:id="@+id/imageViewFileIcon"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
             android:src="@drawable/ic_audio"
             android:contentDescription="@string/file_icon"
+            android:padding="8dp"
             app:tint="@color/primary" />
 
         <LinearLayout
@@ -35,55 +36,56 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Nom du fichier"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                android:textColor="@android:color/black"
+                android:textColor="@color/text_primary"
                 android:ellipsize="end"
-                android:maxLines="1" />
+                android:maxLines="2" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="4dp">
+                android:layout_marginTop="8dp">
 
                 <TextView
                     android:id="@+id/textViewFileType"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Audio"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/darker_gray" />
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_secondary" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=" • "
-                    android:textSize="14sp"
-                    android:textColor="@android:color/darker_gray" />
+                    android:textSize="16sp"
+                    android:textColor="@color/text_secondary" />
 
                 <TextView
                     android:id="@+id/textViewFileSize"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0 MB"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/darker_gray" />
+                    android:textSize="16sp"
+                    android:textColor="@color/text_secondary" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=" • "
-                    android:textSize="14sp"
-                    android:textColor="@android:color/darker_gray" />
+                    android:textSize="16sp"
+                    android:textColor="@color/text_secondary" />
 
                 <TextView
                     android:id="@+id/textViewFileDuration"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="00:00"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/darker_gray" />
+                    android:textSize="16sp"
+                    android:textColor="@color/text_secondary" />
 
             </LinearLayout>
 
@@ -91,21 +93,23 @@
 
         <ImageButton
             android:id="@+id/imageButtonPlay"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:src="@drawable/ic_play"
             android:contentDescription="@string/play"
+            android:padding="8dp"
             app:tint="@color/primary" />
 
         <ImageButton
             android:id="@+id/imageButtonDelete"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="4dp"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="8dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:src="@drawable/ic_delete"
             android:contentDescription="@string/delete"
+            android:padding="8dp"
             app:tint="@color/error" />
 
     </LinearLayout>
