@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lecteur Multimedia</string>
+    <string name="no_media_files">Aucun fichier multimédia</string>
+    <string name="add_media">Ajouter un fichier</string>
+    <string name="play">Lire</string>
+    <string name="pause">Pause</string>
+    <string name="play_pause">Lecture/Pause</string>
+    <string name="delete">Supprimer</string>
+    <string name="file_icon">Icône du fichier</string>
+    <string name="audio_placeholder">Audio</string>
+</resources>
